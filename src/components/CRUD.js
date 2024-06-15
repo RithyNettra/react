@@ -167,8 +167,8 @@ const CRUD = () => {
             View on Map
           </a>
           <div>
-            <button class="btn btn-danger" id="deleteButton">Delete</button>
-            <button class="btn btn-warning" id="updateButton">Update</button>
+            <button class="btn btn-danger" id="deleteButton" style="margin-top: 10px;">Delete</button>
+            <button class="btn btn-warning" id="updateButton" style="margin-top: 10px;">Update</button>
           </div>
         </div>
       `,
@@ -178,7 +178,7 @@ const CRUD = () => {
         document.getElementById('deleteButton').addEventListener('click', () => {
           deletePlace(provinceId, item.id);
         });
-
+  
         document.getElementById('updateButton').addEventListener('click', () => {
           Swal.fire({
             title: 'Update Place',
